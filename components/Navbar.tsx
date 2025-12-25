@@ -2,7 +2,6 @@
 
 import { scrollToWaitlist } from '@/utils/scroll'
 import { Smartphone } from 'lucide-react'
-import BridgeIcon from './BridgeIcon'
 
 export default function Navbar() {
   return (
@@ -10,8 +9,15 @@ export default function Navbar() {
       <div className="container">
         <div className="nav-content">
           <div className="logo">
-            <BridgeIcon className="logo-icon" size={32} />
-            <span className="logo-text">GlotBridge</span>
+            <span className="logo-text">
+              <span className="logo-g">G</span>
+              <span className="logo-rest">l</span>
+              <span className="logo-o">ö</span>
+              <span className="logo-rest">t-</span>
+              <span className="logo-rest">B</span>
+              <span className="logo-rest">rid</span>
+              <span className="logo-ayn">ع</span>
+            </span>
           </div>
           <div className="nav-actions">
             <div className="app-store-badge">

@@ -266,6 +266,83 @@ body {
     letter-spacing: 2px;
 }
 
+.logo-text {
+    font-family: 'Avenir Next', 'Avenir', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: -0.3px;
+    color: #4a4a4a;
+    display: inline-flex;
+    align-items: center;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+.logo-g {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-o {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    animation: logoPulse 2s ease-in-out infinite;
+}
+
+.logo-ayn {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    animation: logoPulse 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.logo-rest {
+    display: inline-block;
+}
+
+.logo-signal-bridge {
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    margin: 0 4px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.logo-signal-bridge .signal-path {
+    opacity: 0.7;
+}
+
+.logo-signal-bridge .signal-dot {
+    cy: 6;
+}
+
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 0.8;
+    }
+}
+
+@keyframes signalPulse {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 .logo-icon {
     color: var(--primary-coral);
 }
@@ -273,6 +350,50 @@ body {
 .bridge-icon {
     display: inline-block;
     vertical-align: middle;
+}
+
+.bridge-icon .bridge-arc {
+    animation: arcPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 2px 6px rgba(183, 148, 246, 0.5));
+}
+
+.bridge-icon .letter-left {
+    animation: letterBounceLeft 2s ease-in-out infinite;
+    filter: drop-shadow(0 2px 4px rgba(183, 148, 246, 0.4));
+}
+
+.bridge-icon .letter-right {
+    animation: letterBounceRight 2s ease-in-out infinite;
+    filter: drop-shadow(0 2px 4px rgba(245, 169, 184, 0.4));
+}
+
+@keyframes arcPulse {
+    0%, 100% {
+        opacity: 1;
+        filter: drop-shadow(0 2px 6px rgba(183, 148, 246, 0.5));
+    }
+    50% {
+        opacity: 0.9;
+        filter: drop-shadow(0 4px 10px rgba(245, 169, 184, 0.6));
+    }
+}
+
+@keyframes letterBounceLeft {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes letterBounceRight {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-2px);
+    }
 }
 
 .bridge-icon .bridge-connection {
