@@ -6,7 +6,7 @@ import CustomDropdown from './CustomDropdown'
 import { supabase } from '@/lib/supabase'
 
 const useCaseOptions = [
-  { value: '', label: 'What will you use lingway for?' },
+  { value: '', label: 'What will you use GlotBridge for?' },
   { value: 'personal', label: 'Personal Calls' },
   { value: 'business', label: 'Business' },
   { value: 'customer-support', label: 'Customer Support' },
@@ -184,7 +184,7 @@ export default function Waitlist() {
                 options={useCaseOptions}
                 value={formData.useCase}
                 onChange={(value) => setFormData({ ...formData, useCase: value })}
-                placeholder="What will you use lingway for?"
+                placeholder="What will you use GlotBridge for?"
                 className="form-input"
               />
             </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'lingway - Live Translation Over VoIP Calls',
+  title: 'GlotBridge - Live Translation Over VoIP Calls',
   description: 'Experience seamless communication with real-time translation during your VoIP calls. Speak your language, hear theirs.',
 }
 

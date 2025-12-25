@@ -24,7 +24,7 @@ CREATE INDEX idx_waitlist_email ON waitlist(email);
 -- ALTER TABLE waitlist ADD CONSTRAINT unique_email UNIQUE (email);
 
 -- Add comments to document the columns
-COMMENT ON TABLE waitlist IS 'Waitlist table for lingway app signups';
+COMMENT ON TABLE waitlist IS 'Waitlist table for GlotBridge app signups';
 COMMENT ON COLUMN waitlist.id IS 'Primary key';
 COMMENT ON COLUMN waitlist.name IS 'User''s name (required)';
 COMMENT ON COLUMN waitlist.email IS 'User''s email address (required)';

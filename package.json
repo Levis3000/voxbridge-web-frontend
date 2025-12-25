@@ -1,7 +1,7 @@
 {
   "name": "voxbridge-web-frontend",
   "version": "1.0.0",
-  "description": "Landing page for lingway - Live translation over VoIP calls",
+  "description": "Landing page for GlotBridge - Live translation over VoIP calls",
   "private": true,
   "scripts": {
     "dev": "next dev",

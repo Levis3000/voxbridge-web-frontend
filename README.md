@@ -1,6 +1,6 @@
-# lingway Landing Page
+# GlotBridge Landing Page
 
-A beautiful, Duolingo-inspired landing page for lingway - an app that provides live translation over VoIP calls. Built with Next.js 14 and React.
+A beautiful, Duolingo-inspired landing page for GlotBridge - an app that provides live translation over VoIP calls. Built with Next.js 14 and React.
 
 ## Features
 

@@ -683,7 +683,7 @@ export default function TwoPhonesDemo() {
               <div className="phone-header">
                 <div className="phone-app-badge">
                   <BridgeIcon size={16} />
-                  <span className="phone-app-name">lingway</span>
+                  <span className="phone-app-name">GlotBridge</span>
                 </div>
                 <div className="phone-language-group">
                   <Globe2 className="phone-icon" size={18} />
@@ -726,7 +726,7 @@ export default function TwoPhonesDemo() {
               <div className="phone-header">
                 <div className="phone-app-badge">
                   <BridgeIcon size={16} />
-                  <span className="phone-app-name">lingway</span>
+                  <span className="phone-app-name">GlotBridge</span>
                 </div>
                 <div className="phone-language-group">
                   <Globe2 className="phone-icon" size={18} />

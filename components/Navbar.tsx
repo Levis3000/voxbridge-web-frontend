@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="nav-content">
           <div className="logo">
             <BridgeIcon className="logo-icon" size={32} />
-            <span className="logo-text">lingway</span>
+            <span className="logo-text">GlotBridge</span>
           </div>
           <div className="nav-actions">
             <div className="app-store-badge">
