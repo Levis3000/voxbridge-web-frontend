@@ -588,18 +588,18 @@ export default function TwoPhonesDemo() {
             setIsEnglishSpeaking(false)
           }
 
-          englishSynthRef.current.speak(englishUtterance)
+          if (englishSynthRef.current) {
+            englishSynthRef.current.speak(englishUtterance)
+          } else if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+            window.speechSynthesis.speak(englishUtterance)
+          }
         }, 200) // Delay to ensure clean start
       }, 600)
 
       return () => {
         clearTimeout(timer)
-        if (englishSynthRef.current) {
-          englishSynthRef.current.cancel()
-        }
-        if (targetSynthRef.current) {
-          targetSynthRef.current.cancel()
-        }
+        englishSynthRef.current?.cancel()
+        targetSynthRef.current?.cancel()
         setShowTranslation(false)
       }
     }

@@ -33,7 +33,7 @@ export default function HowItWorks() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.target instanceof HTMLElement) {
             entry.target.style.opacity = '1'
             entry.target.style.transform = 'translateY(0)'
           }
@@ -67,7 +67,7 @@ export default function HowItWorks() {
             <div
               key={step.number}
               className="step"
-              ref={(el) => (stepsRef.current[step.number - 1] = el)}
+              ref={(el) => { stepsRef.current[step.number - 1] = el }}
               style={{ '--i': step.number } as React.CSSProperties}
             >
               <div className="step-number">{step.number}</div>

@@ -43,7 +43,7 @@ export default function Features() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.target instanceof HTMLElement) {
             entry.target.style.opacity = '1'
             entry.target.style.transform = 'translateY(0)'
           }
@@ -79,7 +79,7 @@ export default function Features() {
               <div
                 key={index}
                 className="feature-card"
-                ref={(el) => (cardsRef.current[index] = el)}
+                ref={(el) => { cardsRef.current[index] = el }}
                 style={{ '--i': index } as React.CSSProperties}
               >
                 <div className="feature-icon">

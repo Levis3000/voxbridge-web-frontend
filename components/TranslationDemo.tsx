@@ -86,7 +86,7 @@ export default function TranslationDemo() {
           }, 300)
         }
 
-        englishSynthRef.current.speak(englishUtterance)
+        englishSynthRef.current?.speak(englishUtterance)
       }, 600) // Wait for fade-in animation
 
       return () => {
